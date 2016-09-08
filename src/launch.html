@@ -1,21 +1,14 @@
 <HTML>
   <head>
     
-    <script src="Script/terminal.js"></script>
+    <script src="script/terminal.js"></script>
     <script>
-      var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-
-var height = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
-      var term = new Terminal("term")
-      term.beep();
-      term.setWidth(width);
-      term.setHeight(height);
-      term.setBackgroundColor("black");
+      var term = new Terminal()
+      term.setWidth(1000);
+      term.setHeight(1000);
+      term.setBackgroundColor('black');
       term.blinkingCursor(true);
+      term.beep();
     </script>
   </head>
   <body id="term">
